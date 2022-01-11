@@ -2,7 +2,6 @@ package a.nikolskii.mtdds.entity;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
-
 import javax.persistence.*;
 
 @Data
