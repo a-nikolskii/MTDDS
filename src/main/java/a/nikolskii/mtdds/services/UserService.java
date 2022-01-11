@@ -3,13 +3,14 @@ import a.nikolskii.mtdds.entity.User;
 import a.nikolskii.mtdds.repository.UserRepository;
 import a.nikolskii.mtdds.exceptions.UserNotFoundException;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@Data
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
     @Autowired
