@@ -67,7 +67,7 @@
               <button type="submit" class="btn btn-primary" id="sign-up">Sign up</button>
               <button type="submit" class="btn btn-primary" id="cancel">Cancel</button>
               <div th:if="${#fields.hasErrors('global')}">
-                <h4>An error occurs:</h4>
+                <h5>An error occurs:</h5>
                 <p th:each="err : ${#fields.errors('global')}" th:text="${err}" class="error" />
               </div>
             </form>

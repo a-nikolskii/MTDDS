@@ -33,7 +33,7 @@ public class RegistrationController {
         var isSaved = userService.saveUser(newUser);
 
         if (!isSaved) {
-            var error = new ObjectError("globalError", "User already exist. Input another name.");
+            var error = new ObjectError("globalError", "User already exist. Input another email.");
             result.addError(error);
             return "/registration";
         }
