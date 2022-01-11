@@ -32,7 +32,7 @@ public class UserService {
     }
 
     public boolean saveUser(User user){
-        var userFromDb = userRepository.findByUserName(user.getUserName());
+        var userFromDb = userRepository.findUserByEmail(user.getEmail());
 
         if (userFromDb != null){
             return false;
